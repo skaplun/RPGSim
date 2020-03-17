@@ -1,0 +1,262 @@
+
+
+
+.page{
+ background: #323232;
+ width : 100%;
+ height: 100%;
+}
+
+
+
+.character-name,
+h5{
+	color: white;
+}
+
+.game-container{
+  border: 1px solid #ccc;
+  max-height: 663px;
+}
+
+@media only screen and (max-width: 600px) {
+  .game-container {
+    max-height: 100%;
+	height: 100%;
+	width: 100%;
+  }
+}
+
+
+.character-container,
+.game-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+
+.character-container{
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+
+.game-container{
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+	<!-- margin-top: 5%; -->
+	<!-- margin-left: 5%; -->
+}
+
+
+.character-panel,
+.game-panel{
+   display: flex;
+   flex-basis: 100%;
+   flex: 1;
+}
+
+
+div.game-panel:nth-child(1){
+	border-right : 1px solid #ccc;
+}
+div.game-panel:nth-child(3){
+	border-left: 1px solid #ccc;
+
+}
+
+.central-panel{
+	flex : 3;
+}
+
+.character-name{
+	margin: 6% 35%;
+}
+
+.circle {
+  width: 25px;
+  height: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: red;
+margin-top: 20px;
+}
+
+.central-panel-internalcontainer,
+.fight-content{
+	display: flex;
+	flex-direction : column;
+	overflow-x : hidden;
+
+}
+
+.fight-content{
+	width: 90%;
+	margin-left: 5%;
+	height:44%;
+	overflow-y : scroll;
+	
+}
+
+.fight-row{
+	width : 100%;
+	padding : 4px;
+	font-size: 18px;
+	width: 82%;
+}
+
+.central-panel-internalcontainer{
+	height : 100%;
+	width: 100%;
+}
+
+.action-menu{
+	height: 43%;
+	margin-left: 19%;
+	width : 80%;
+	margin-top: 4%;
+}
+
+button{
+	background: white;
+	border-radius: 5px;
+	padding: 7px;
+}
+.row{
+	margin-left: 19%;
+}
+
+
+
+.action-menu-internalcontainer{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.compasses{
+	height: 270px;
+	display : flex;
+	margin-left : 16%;
+}
+	
+.compass{
+	display : flex;
+	justify-content: space-between;
+	width: 164px;
+	height: 150px;
+	flex-direction: column;
+}
+.direction{
+		width: 52px;
+	height: 52px;
+	padding: 0px;
+	flex: 1;
+}
+.direction > img{
+	width : 50px;
+	height : 50px;
+}
+
+.floating-right{
+	margin-left: 55px;
+}
+.floating-right-more{
+	margin-left: 92px;
+}
+
+.defensive-compass{
+	margin-left: 10%;
+}
+
+.active{
+	background: gold;
+}
+	
+
+.human-body {
+    width: 207px;
+    position: relative;
+    padding-top: 240px;
+    height: 260px;
+    display: block;
+    margin: 40px auto;
+}
+
+.human-body svg {
+    position: absolute;
+    left: 50%;
+    fill: #57c9d5;
+}
+
+.human-body svg.head {
+    margin-left: -28.5px;
+    top: -6px;
+}
+
+.human-body svg.left-shoulder {
+    margin-left: -53.5px;
+    top: 69px;
+}
+
+.human-body svg.right-shoulder {
+    margin-left: 13.5px;
+    top: 69px;
+}
+
+.human-body svg.left-arm {
+    margin-left: -78px;
+    top: 112px;
+}
+
+.human-body svg.right-arm {
+    margin-left: 38px;
+    top: 112px;
+    z-index: 10001;
+}
+
+.human-body svg.chest {
+    margin-left: -43.5px;
+    top: 88px;
+}
+
+.human-body svg.stomach {
+    margin-left: -37.5px;
+    top: 130px;
+}
+
+.human-body svg.left-leg {
+    margin-left: -46.5px;
+    top: 205px;
+    z-index: 9999;
+}
+
+.human-body svg.right-leg {
+    margin-left: 1.5px;
+    top: 205px;
+    z-index: 9999;
+}
+
+.human-body svg.left-hand {
+    margin-left: -102.5px;
+    top: 224px;
+}
+
+.human-body svg.right-hand {
+    margin-left: 66.5px;
+    top: 224px;
+    z-index: 10000;
+}
+
+.human-body svg.left-foot {
+    margin-left: -35.5px;
+    top: 455px;
+}
+
+.human-body svg.right-foot {
+    margin-left: 5.5px;
+    top: 455px;
+}
+
