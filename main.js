@@ -116,6 +116,7 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+
 function removeActive(selector){
 	document?.querySelector(selector)?.querySelector('.active')?.classList.remove('active')
 }
