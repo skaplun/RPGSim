@@ -61,6 +61,13 @@ h5{
    flex: 1;
 }
 
+.character-body-container{
+flex: 4;
+    justify-content: center;
+	justify-content
+}
+
+
 
 div.game-panel:nth-child(1){
 	border-right : 1px solid #ccc;
@@ -224,7 +231,7 @@ button{
     padding-top: 240px;
     height: 260px;
     display: block;
-    margin: 40px auto;
+    /* margin: 40px auto; */
 }
 
 .human-body svg {
