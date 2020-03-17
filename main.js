@@ -204,7 +204,6 @@ let calculator = function(playerObj, enemyObj, enemyName, defender){
 			}
 			let defendedAreas = directions[direction];
 			if(defendedAreas.includes(attackDirection)){
-				console.log('defended')
 				return true
 			}else{
 				let successChance = Math.random();
@@ -253,7 +252,7 @@ let calculator = function(playerObj, enemyObj, enemyName, defender){
 		
 		player = playerObj;
 		enemy = enemyObj;
-		console.log(isPlayerAttacked(defender))
+
 		return [enemyName, defender, dmgType(), 
 			 region(isPlayerAttacked(defender)), subregion(isPlayerAttacked(defender)), dmg(), 
 			 counterType(), counterSuccess(isPlayerAttacked(defender)), attackSuccess(), isDead(isPlayerAttacked(defender))];			
@@ -272,9 +271,7 @@ let fightEngine = {
 	spell : undefined, 
 	
 	calculate : function(){
-		let r = [calculator(this.player, this.enemy, 'thief', 'enemy'), calculator(this.player, this.enemy, 'thief', 'player')];
-		console.log(r);
-		return r;
+		return [calculator(this.player, this.enemy, 'thief', 'enemy'), calculator(this.player, this.enemy, 'thief', 'player')];
 	},
 	
 	printFightRow : function(entity, type, dmgType, region, subregion, dmg, counterType, counterSuccess, attackSuccess, isDead){
