@@ -62,7 +62,7 @@ h5{
 .character-container{
 	flex-direction: column;
 	width: 100%;
-  max-height: 663px;
+  /* max-height: 663px; */
 }
 
 .game-container{
@@ -80,10 +80,16 @@ h5{
    flex: 1;
 }
 
-.character-body-container{
-flex: 4;
+
+.character-panel{
+	/* align-items: center; */
     justify-content: center;
-	justify-content
+	
+}
+
+.character-body-container{
+	flex: 9;
+    /* justify-content: center; */
 }
 
 
@@ -101,7 +107,7 @@ div.game-panel:nth-child(3){
 }
 
 .character-name{
-	margin: 6% 35%;
+	margin: 5% auto;
 }
 
 .circle {
@@ -123,9 +129,9 @@ margin-top: 20px;
 }
 
 .fight-content{
-	width: 90%;
-	margin-left: 5%;
-	height:44%;
+	/* width: 90%; */
+	/* margin-left: 5%; */
+	/* height:44%; */
 	overflow-y : scroll;
 	
 }
@@ -143,8 +149,8 @@ margin-top: 20px;
 }
 
 .action-menu{
-	height: 43%;
-	margin-left: 1%;
+	/* height: 43%; */
+	/* margin-left: 1%; */
 	width : 100%;
 	margin-top: 4%;
 }
@@ -162,7 +168,7 @@ button{
 	height: 100%;
 }
 .compasses{
-	height: 270px;
+	/* height: 270px; */
 	display : flex;
 	/* margin-left : 16%; */
 }

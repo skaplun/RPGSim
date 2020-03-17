@@ -341,7 +341,7 @@ let fightEngine = {
 			}else{		
 				//save direction to engine
 				removeActive(selector)
-				e.target.parentElement.classList.add('active')
+					e.target.parentElement.classList.add('active')
 				selector === '.offensive-compass' ? fightEngine.attackDirection = e.target.parentElement.id : fightEngine.defenseDirection = e.target.parentElement.id;
 			}
 		}
